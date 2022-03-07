@@ -1,0 +1,26 @@
+.interview{
+  position: relative;
+  height: 100%;
+  table {
+    .ant-table-thead > tr > th {
+      background: #fff !important;
+      white-space: nowrap; // 防止IE等浏览器不支持'max-content'属性 导致内容换行
+    }
+    .ant-table-tbody >tr> td {
+      white-space: nowrap; // 防止IE等浏览器不支持'max-content'属性 导致内容换行
+    }
+    .descriptions{
+      width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+    }
+  }
+  .main {
+    width: 800px;
+    margin: 40px auto;
+  }
+}
