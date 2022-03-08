@@ -285,6 +285,8 @@ const Interview = () => {
     if(filter) {
       data.shift();
       setFilter(false);
+      setFilterTilteValue('');
+      setFilterGenreValue('');
       setData([...data]);
     }else {
       data.unshift({id: -1})
